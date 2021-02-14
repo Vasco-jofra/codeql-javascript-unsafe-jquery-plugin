@@ -1,5 +1,5 @@
 import javascript
 
-from CallExpr dollarCall
-where dollarCall.getCalleeName().matches("$")
-select dollarCall
+from CallExpr dollar_call
+where dollar_call.getCalleeName().matches("$")
+select dollar_call
