@@ -10,4 +10,4 @@ from DataFlow::FunctionNode plugin_func, DataFlow::ParameterNode last_param
 where
   plugin_func = jquery().getAPropertyRead("fn").getAPropertySource() and
   last_param = plugin_func.getLastParameter()
-select last_param
+select plugin_func, last_param
